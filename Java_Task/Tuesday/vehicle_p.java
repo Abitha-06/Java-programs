@@ -1,4 +1,4 @@
-package Java_Task.Monday;
+package Java_Task.Tuesday;
 import java.util.*;
 
 interface Insurable {
@@ -19,7 +19,7 @@ abstract class Vehicle {
     void displayDetails() {
         System.out.println("Vehicle Number : " + vehicleNumber);
         System.out.println("Brand          : " + brand);
-        System.out.println("Base Rate      : ₹" + baseRate);
+        System.out.println("Base Rate      : " + baseRate);
     }
 }
 class Car extends Vehicle implements Insurable {
@@ -101,12 +101,12 @@ class RentalAgency {
         selectedVehicle.displayDetails();
 
         System.out.println("Rental Days    : " + days);
-        System.out.println("Rental Cost    : ₹" + rentalCost);
-        System.out.println("Insurance Cost : ₹" + insuranceCost);
-        System.out.println("Total Bill     : ₹" + total);
+        System.out.println("Rental Cost    : " + rentalCost);
+        System.out.println("Insurance Cost : " + insuranceCost);
+        System.out.println("Total Bill     : " + total);
     }
 }
-public class vehicle {
+public class vehicle_p {
     public static void main(String[] args) {
         RentalAgency agency = new RentalAgency();
         Car car = new Car(
